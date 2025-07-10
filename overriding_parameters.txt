@@ -1,0 +1,2 @@
+# example of overriding parameters from CLI
+nextflow run md_vs.nf -profile cluster_normal --outdir /export/acicalo/projects/vs_md_nf/results_test2/

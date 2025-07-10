@@ -1,0 +1,15 @@
+nextflow run /export/nextflow/bdrd/all_in_one_pipeline/main.nf \
+    -c /export/nextflow/bdrd/all_in_one_pipeline/params.config \
+    --samplesheet=/export/acicalo/nextflow/md_vs_test/samplesheet.csv \
+    --outdir=/export/acicalo/nextflow/md_vs_test/ --project_id="TEST" \
+    --map2reads=false \ # can be true or false
+    --longreads=true \ # can be shortreads,longreads,hybrud
+    --run_qc=true \ 
+    --run_assembly=true \
+    --run_blastx=true \ # can be true or false
+    --bam_file=/mnt/minion_data/ont-2025/20250407_1212_P2S-00968-B_PBC19258_dd41167f/bamout/all_barcodes.bam \
+    --dorado_polish=false \ # this uses the bam_file to polish dragonflye contigs
+    --nanopore_assembly=false \ # phage specific
+    --use_gsize=false --dragonflye=true \ 
+    --memory=500 --threads=128 \
+    -profile cluster_big 
