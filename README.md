@@ -4,7 +4,6 @@
 
 ## Getting started
 
-This repository is a compilation of tools commonly used in BDRD NMRC lab. This was developed to easily create customized workflows for commonly used tools. Prebuilt workflows exist for qc stats and Metadetector/Virusseeker (MD-VS)
 
 To add to this repository
 ```
